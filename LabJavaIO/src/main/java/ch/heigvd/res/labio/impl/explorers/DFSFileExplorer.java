@@ -35,6 +35,7 @@ public class DFSFileExplorer implements IFileExplorer {
 
     Arrays.sort(children);
 
+    // explore every children to know if it's a directory or a file
     for (File child : children) {
       explore(child, vistor);
     }
